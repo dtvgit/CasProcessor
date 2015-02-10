@@ -2167,7 +2167,7 @@ bool CCasProcessorPlugin::Initialize()
 	Info.Size            = sizeof(Info);
 	Info.Flags           = 0;
 	Info.pTSProcessor    = new CCasProcessor;
-	Info.ConnectPosition = TVTest::TS_RPOCESSOR_CONNECT_POSITION_VIEWER;
+	Info.ConnectPosition = TVTest::TS_PROCESSOR_CONNECT_POSITION_VIEWER;
 	bool fResult = m_pApp->RegisterTSProcessor(&Info);
 	Info.pTSProcessor->Release();
 	if (!fResult) {
